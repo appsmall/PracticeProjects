@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Copperplate.ttc">
+            <string>Copperplate</string>
+            <string>Copperplate-Light</string>
+        </array>
+        <array key="Menlo.ttc">
+            <string>Menlo-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sig_Capture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="YKU-Wz-PE1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Digitally" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IS6-T3-IyF">
+                                <rect key="frame" x="102" y="106" width="232" height="32"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Just sign on the view &amp; save them in gallery." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEE-yb-4ZV">
+                                <rect key="frame" x="40" y="150" width="294" height="40.5"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signatureBG" translatesAutoresizingMaskIntoConstraints="NO" id="kZf-4M-tqN">
+                                <rect key="frame" x="43" y="95" width="48" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Bwx-Ct-6gr"/>
+                                    <constraint firstAttribute="width" constant="48" id="RPA-3T-hBp"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ntv-2R-A2O">
+                                <rect key="frame" x="69" y="307.5" width="237" height="50.5"/>
+                                <color key="backgroundColor" red="0.60985088832487311" green="0.43992503019438556" blue="0.093018554652775656" alpha="0.51634738869863017" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Click to capture your sign">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oXM-b7-EMB" kind="presentation" id="gqH-Vd-5CV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IS6-T3-IyF" secondAttribute="trailing" constant="41" id="3d8-c1-JLW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ntv-2R-A2O" secondAttribute="trailing" constant="69" id="CAX-Gd-K4r"/>
+                            <constraint firstItem="Ntv-2R-A2O" firstAttribute="top" secondItem="qEE-yb-4ZV" secondAttribute="bottom" constant="117.5" id="Cmb-0X-k2x"/>
+                            <constraint firstItem="YKU-Wz-PE1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HWr-AS-2KW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qEE-yb-4ZV" secondAttribute="trailing" constant="41" id="JWO-Dg-OlR"/>
+                            <constraint firstItem="qEE-yb-4ZV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="MsB-eU-m16"/>
+                            <constraint firstItem="Ntv-2R-A2O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="Wbp-U3-vFd"/>
+                            <constraint firstItem="IS6-T3-IyF" firstAttribute="leading" secondItem="kZf-4M-tqN" secondAttribute="trailing" constant="11" id="Yvg-fb-JhP"/>
+                            <constraint firstItem="YKU-Wz-PE1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="azI-Gv-IZ1"/>
+                            <constraint firstItem="kZf-4M-tqN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="dYg-rN-Luz"/>
+                            <constraint firstItem="IS6-T3-IyF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="86" id="hzg-2a-pt3"/>
+                            <constraint firstItem="YKU-Wz-PE1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="k3J-kL-bjl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ntv-2R-A2O" secondAttribute="bottom" constant="309" id="mgc-10-gzJ"/>
+                            <constraint firstItem="YKU-Wz-PE1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="o8w-E1-h0e"/>
+                            <constraint firstItem="kZf-4M-tqN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="pW9-Yw-zGI"/>
+                            <constraint firstItem="qEE-yb-4ZV" firstAttribute="top" secondItem="IS6-T3-IyF" secondAttribute="bottom" constant="12.5" id="qao-T6-awa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="30.134932533733135"/>
+        </scene>
+        <!--SignVC-->
+        <scene sceneID="35j-eE-GIa">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="oXM-b7-EMB" customClass="signVC" customModule="Sig_Capture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v2a-iH-ptT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ph-7G-rCU">
+                                <rect key="frame" x="0.0" y="460" width="375" height="207"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isR-6y-7gK">
+                                        <rect key="frame" x="98" y="83" width="180" height="38"/>
+                                        <color key="backgroundColor" red="0.078694768249988556" green="0.11091089993715286" blue="0.44076400995254517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="22"/>
+                                        <state key="normal" title="Clear">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnClear:" destination="oXM-b7-EMB" eventType="touchUpInside" id="GZD-x3-Dor"/>
+                                            <action selector="btnClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Krm-wr-Hdc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7J-BS-z2S">
+                                        <rect key="frame" x="98" y="27" width="180" height="38"/>
+                                        <color key="backgroundColor" red="0.055318096846097314" green="0.025400913606532818" blue="0.43989927030456855" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="22"/>
+                                        <state key="normal" title="Save">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnSave:" destination="oXM-b7-EMB" eventType="touchUpInside" id="HGU-Y5-nV2"/>
+                                            <action selector="btnSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XXF-Lw-BeM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzH-sN-IzR">
+                                        <rect key="frame" x="98" y="137" width="180" height="38"/>
+                                        <color key="backgroundColor" red="0.078694768249988556" green="0.11091089993715286" blue="0.44076400995254517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="22"/>
+                                        <state key="normal" title="Close"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.51338435913705582" green="0.21334274912081713" blue="0.014682939827344853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="YzH-sN-IzR" secondAttribute="bottom" constant="32" id="7Id-of-60R"/>
+                                    <constraint firstItem="isR-6y-7gK" firstAttribute="top" secondItem="p7J-BS-z2S" secondAttribute="bottom" constant="18" id="7zW-AC-pMh"/>
+                                    <constraint firstItem="YzH-sN-IzR" firstAttribute="trailing" secondItem="p7J-BS-z2S" secondAttribute="trailing" id="JDF-dY-BGn"/>
+                                    <constraint firstAttribute="trailing" secondItem="p7J-BS-z2S" secondAttribute="trailing" constant="97" id="KDv-1W-KNy"/>
+                                    <constraint firstItem="p7J-BS-z2S" firstAttribute="leading" secondItem="2ph-7G-rCU" secondAttribute="leading" constant="98" id="PCj-8V-qKs"/>
+                                    <constraint firstItem="YzH-sN-IzR" firstAttribute="top" secondItem="isR-6y-7gK" secondAttribute="bottom" constant="16" id="hje-Ni-QG8"/>
+                                    <constraint firstItem="isR-6y-7gK" firstAttribute="trailing" secondItem="p7J-BS-z2S" secondAttribute="trailing" id="mim-rm-gSN"/>
+                                    <constraint firstItem="isR-6y-7gK" firstAttribute="leading" secondItem="p7J-BS-z2S" secondAttribute="leading" id="rUU-tz-VKs"/>
+                                    <constraint firstItem="YzH-sN-IzR" firstAttribute="leading" secondItem="p7J-BS-z2S" secondAttribute="leading" id="roA-mg-zpp"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eqv-X0-cD7" customClass="VMSignatureView" customModule="Sig_Capture" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="222" width="375" height="238"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.52667487157534243" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p7J-BS-z2S" firstAttribute="top" secondItem="eqv-X0-cD7" secondAttribute="bottom" constant="27" id="05s-gU-g09"/>
+                            <constraint firstItem="2ph-7G-rCU" firstAttribute="bottom" secondItem="In4-tm-QXK" secondAttribute="bottom" id="1mK-ac-ub8"/>
+                            <constraint firstItem="eqv-X0-cD7" firstAttribute="leading" secondItem="In4-tm-QXK" secondAttribute="leading" id="8dm-Xj-Y4b"/>
+                            <constraint firstItem="2ph-7G-rCU" firstAttribute="trailing" secondItem="In4-tm-QXK" secondAttribute="trailing" id="9s8-20-KKO"/>
+                            <constraint firstItem="eqv-X0-cD7" firstAttribute="top" secondItem="In4-tm-QXK" secondAttribute="top" constant="202" id="C5S-Zd-dkO"/>
+                            <constraint firstItem="eqv-X0-cD7" firstAttribute="trailing" secondItem="In4-tm-QXK" secondAttribute="trailing" id="WRI-x3-tlg"/>
+                            <constraint firstItem="2ph-7G-rCU" firstAttribute="top" secondItem="eqv-X0-cD7" secondAttribute="bottom" id="gt1-ro-75W"/>
+                            <constraint firstItem="2ph-7G-rCU" firstAttribute="top" secondItem="In4-tm-QXK" secondAttribute="top" constant="440" id="kek-Ak-kfi"/>
+                            <constraint firstItem="2ph-7G-rCU" firstAttribute="leading" secondItem="In4-tm-QXK" secondAttribute="leading" id="w69-84-4cd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="In4-tm-QXK"/>
+                    </view>
+                    <connections>
+                        <outlet property="oltClear" destination="isR-6y-7gK" id="6tX-Rw-zIa"/>
+                        <outlet property="oltSave" destination="p7J-BS-z2S" id="Snh-2X-uKH"/>
+                        <outlet property="signView" destination="eqv-X0-cD7" id="X0g-KZ-J1V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QZA-I2-DEr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855.20000000000005" y="30.134932533733135"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="236" height="418"/>
+        <image name="signatureBG" width="400" height="400"/>
+    </resources>
+</document>

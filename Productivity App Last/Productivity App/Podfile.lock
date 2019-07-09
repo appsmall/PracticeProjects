@@ -1,0 +1,18 @@
+PODS:
+  - BMInputBox (1.3.1)
+  - DownPicker (0.1.34)
+  - FSCalendar (2.7.9)
+
+DEPENDENCIES:
+  - BMInputBox
+  - DownPicker
+  - FSCalendar
+
+SPEC CHECKSUMS:
+  BMInputBox: 486a080084f88e45b3e44ca549cba47fbe3f28ef
+  DownPicker: c00ea63f08ae82116cc93d0eba74e86bf3d4c68e
+  FSCalendar: a04b09f16f811bc92e82f3cf852a15225233b9d5
+
+PODFILE CHECKSUM: 968480d4f2747c0c1e2fae0dcaf10450d49daaae
+
+COCOAPODS: 1.2.1

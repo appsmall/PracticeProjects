@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hfj-nR-Rci">
+                                <rect key="frame" x="16" y="107" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lni-PV-dvD">
+                                <rect key="frame" x="16" y="160" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RAF-v4-CB8">
+                                <rect key="frame" x="16" y="209" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcM-u3-eNw">
+                                <rect key="frame" x="124" y="311" width="127" height="45"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="3SS-4o-LHh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YNB-EC-CMm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0o-5l-bv9">
+                                <rect key="frame" x="124" y="378" width="127" height="45"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="kMv-Iz-ReB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="FIND">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFind:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3jg-vw-WXp"/>
+                                    <action selector="btnSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="49H-FM-zUk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="RAF-v4-CB8" firstAttribute="centerX" secondItem="fcM-u3-eNw" secondAttribute="centerX" id="Ga9-yJ-y5m"/>
+                            <constraint firstItem="Hfj-nR-Rci" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="V2r-9O-46g"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fcM-u3-eNw" secondAttribute="bottom" constant="311" id="Zvf-bg-nDG"/>
+                            <constraint firstItem="fcM-u3-eNw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="agc-oq-qgl"/>
+                            <constraint firstItem="fcM-u3-eNw" firstAttribute="top" secondItem="RAF-v4-CB8" secondAttribute="bottom" constant="72" id="ayh-rn-EJy"/>
+                            <constraint firstItem="Hfj-nR-Rci" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="d3d-Ra-oc8"/>
+                            <constraint firstItem="Lni-PV-dvD" firstAttribute="top" secondItem="Hfj-nR-Rci" secondAttribute="bottom" constant="23" id="gA8-Dy-kYw"/>
+                            <constraint firstItem="Lni-PV-dvD" firstAttribute="leading" secondItem="RAF-v4-CB8" secondAttribute="leading" id="h3s-nL-PoQ"/>
+                            <constraint firstItem="Hfj-nR-Rci" firstAttribute="leading" secondItem="Lni-PV-dvD" secondAttribute="leading" id="nrG-BD-X1U"/>
+                            <constraint firstItem="Hfj-nR-Rci" firstAttribute="trailing" secondItem="Lni-PV-dvD" secondAttribute="trailing" id="oH4-YA-xUb"/>
+                            <constraint firstItem="Lni-PV-dvD" firstAttribute="trailing" secondItem="RAF-v4-CB8" secondAttribute="trailing" id="oQS-Gi-yJk"/>
+                            <constraint firstItem="RAF-v4-CB8" firstAttribute="top" secondItem="Lni-PV-dvD" secondAttribute="bottom" constant="19" id="tlL-TE-huN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtAge" destination="Lni-PV-dvD" id="z25-AG-Mhc"/>
+                        <outlet property="txtName" destination="Hfj-nR-Rci" id="zCf-25-zop"/>
+                        <outlet property="txtPhone" destination="RAF-v4-CB8" id="9BY-tx-dYa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
